@@ -1,0 +1,50 @@
+2008,Aug,Victoria,Drug Eruptions,1
+2006,Dec,South Australia,Panic Disorder,1
+2006,Dec,Northern Territory,Hypoglycemia,1
+2006,Nov,New South Wales,Splenomegaly,1
+2011,Dec,Northern Territory,Panic Disorder,1
+2009,Nov,Victoria,Empyema Imaging,1
+2008,May,Western Australia,Pneumothorax Imaging,1
+2009,Apr,New South Wales,Osteopetrosis,1
+2011,Nov,New South Wales,Adrenal Carcinoma,1
+2011,Jan,Queensland,Anemia,1
+2007,May,New South Wales,Hypoglycemia,1
+2007,Feb,Victoria,Ecthyma,1
+2010,Nov,South Australia,Drug Eruptions,1
+2010,Jun,New South Wales,Breast Cancer,1
+2006,Jun,Queensland,Anemia,1
+2009,Mar,South Australia,Depression,1
+2009,Nov,Queensland,Hysteroscopy,1
+2009,Feb,Queensland,Cardiac Tumor Imaging,1
+2008,Dec,South Australia,Schizophrenia,1
+2011,Aug,Queensland,Drug Eruptions,1
+2009,Dec,New South Wales,Endometritis,1
+2006,Oct,Tasmania,Neutrophilia,1
+2011,Jan,Western Australia,Hypoglycemia,1
+2009,Aug,Queensland,Panic Disorder,1
+2007,May,Queensland,Pneumothorax Imaging,1
+2009,Jan,Western Australia,Neutrophilia,1
+2009,May,Western Australia,Hysteroscopy,1
+2006,Mar,South Australia,Pediatric Tachycardia,1
+2006,Mar,Victoria,Hysteroscopy,1
+2011,Jul,New South Wales,Pediatric Tachycardia,1
+2009,Jul,Northern Territory,Cardiac Tumor Imaging,1
+2011,Sep,Western Australia,Neutrophilia,1
+2010,Jun,Victoria,Splenomegaly,1
+2007,Dec,New South Wales,Vaginitis,1
+2006,Sep,Western Australia,Splenomegaly,1
+2008,Jul,Tasmania,Neutrophilia,1
+2011,Jul,Western Australia,Cardiac Sarcoma,1
+2009,Feb,New South Wales,Depression,1
+2011,Jun,Tasmania,Cardiac Tumor Imaging,1
+2010,Aug,New South Wales,Empyema Imaging,1
+2009,Jan,Victoria,Drug Eruptions,1
+2006,Sep,New South Wales,Cardiac Sarcoma,1
+2011,Feb,New South Wales,Adrenal Carcinoma,1
+2011,Feb,New South Wales,Cardiac Tumor Imaging,1
+2008,Jun,Victoria,Hypoglycemia,1
+2006,Nov,Victoria,Cardiac Sarcoma,1
+2007,Apr,Western Australia,Chancroid,1
+2010,Apr,Northern Territory,Empyema Imaging,1
+2009,Nov,Tasmania,Ecthyma,1
+2010,Jan,Victoria,Schizophrenia,1
