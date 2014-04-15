@@ -1,50 +1,50 @@
-2008,Aug,Victoria,Drug Eruptions,1
-2006,Dec,South Australia,Panic Disorder,1
-2006,Dec,Northern Territory,Hypoglycemia,1
-2006,Nov,New South Wales,Splenomegaly,1
-2011,Dec,Northern Territory,Panic Disorder,1
-2009,Nov,Victoria,Empyema Imaging,1
-2008,May,Western Australia,Pneumothorax Imaging,1
-2009,Apr,New South Wales,Osteopetrosis,1
-2011,Nov,New South Wales,Adrenal Carcinoma,1
-2011,Jan,Queensland,Anemia,1
-2007,May,New South Wales,Hypoglycemia,1
-2007,Feb,Victoria,Ecthyma,1
-2010,Nov,South Australia,Drug Eruptions,1
-2010,Jun,New South Wales,Breast Cancer,1
-2006,Jun,Queensland,Anemia,1
-2009,Mar,South Australia,Depression,1
-2009,Nov,Queensland,Hysteroscopy,1
-2009,Feb,Queensland,Cardiac Tumor Imaging,1
-2008,Dec,South Australia,Schizophrenia,1
-2011,Aug,Queensland,Drug Eruptions,1
-2009,Dec,New South Wales,Endometritis,1
-2006,Oct,Tasmania,Neutrophilia,1
-2011,Jan,Western Australia,Hypoglycemia,1
-2009,Aug,Queensland,Panic Disorder,1
-2007,May,Queensland,Pneumothorax Imaging,1
-2009,Jan,Western Australia,Neutrophilia,1
-2009,May,Western Australia,Hysteroscopy,1
-2006,Mar,South Australia,Pediatric Tachycardia,1
-2006,Mar,Victoria,Hysteroscopy,1
-2011,Jul,New South Wales,Pediatric Tachycardia,1
-2009,Jul,Northern Territory,Cardiac Tumor Imaging,1
-2011,Sep,Western Australia,Neutrophilia,1
-2010,Jun,Victoria,Splenomegaly,1
-2007,Dec,New South Wales,Vaginitis,1
-2006,Sep,Western Australia,Splenomegaly,1
-2008,Jul,Tasmania,Neutrophilia,1
-2011,Jul,Western Australia,Cardiac Sarcoma,1
-2009,Feb,New South Wales,Depression,1
-2011,Jun,Tasmania,Cardiac Tumor Imaging,1
-2010,Aug,New South Wales,Empyema Imaging,1
-2009,Jan,Victoria,Drug Eruptions,1
-2006,Sep,New South Wales,Cardiac Sarcoma,1
-2011,Feb,New South Wales,Adrenal Carcinoma,1
-2011,Feb,New South Wales,Cardiac Tumor Imaging,1
-2008,Jun,Victoria,Hypoglycemia,1
-2006,Nov,Victoria,Cardiac Sarcoma,1
-2007,Apr,Western Australia,Chancroid,1
-2010,Apr,Northern Territory,Empyema Imaging,1
-2009,Nov,Tasmania,Ecthyma,1
-2010,Jan,Victoria,Schizophrenia,1
+68,9,1,2008,Jan,23,Port Lincoln Health Services,Splenomegaly,Yes,254,30:47,1,9500,216
+111,17,1,2009,Jun,20,Werribee Mercy Hospital,Insulinoma,No,165,41:25,1,29000,139
+49,6,1,2007,Oct,14,The Prince Charles Hospital,Breast Cancer,No,223,35:51,1,12500,411
+80,13,1,2010,Mar,23,Royal Hobart Hospital,Drug Eruptions,No,142,23:37,1,7000,176
+55,8,1,2010,Apr,8,The Prince Charles Hospital,Depression,No,104,27:45,1,20500,108
+112,16,1,2008,Feb,22,Monash Medical Centre,Neutrophilia,Yes,362,38:44,1,21500,433
+137,19,1,2010,Mar,11,King Edward Memorial Hospital for Women,Drug Eruptions,No,51,49:29,1,21000,145
+20,4,1,2011,Dec,3,Katherine District Hospital,Anemia,Yes,350,32:42,1,27000,87
+14,1,1,2009,Dec,28,Mater Hospital,Breast Cancer,Yes,103,29:48,1,9000,93
+17,2,1,2007,Aug,14,Manly Hospital,Pediatric Tachycardia,No,58,20:30,1,44000,71
+97,14,1,2006,Oct,25,Mersey Community Hospital,Insulinoma,No,187,26:12,1,22000,128
+10,2,1,2007,Feb,8,Manly Hospital,Depression,No,169,27:58,1,15500,278
+32,3,1,2007,Apr,17,Alice Springs Hospital,Cardiac Tumor Imaging,No,307,40:17,1,15000,124
+64,9,1,2009,Jan,17,Flinders Medical Centre,Cardiac Sarcoma,No,103,45:47,1,27500,123
+90,12,1,2011,Nov,20,St Lukes Private Hospital,Endometritis,No,224,35:19,1,43500,127
+55,6,1,2007,Apr,6,The Prince Charles Hospital,Vaginitis,No,361,48:47,1,0,375
+114,15,1,2009,Apr,19,The Alfred Hospital,Breast Cancer,No,304,29:34,1,27000,186
+22,4,1,2007,Nov,25,Alice Springs Hospital,Hypertension,No,2,48:18,1,10500,498
+58,6,1,2008,Aug,10,The Prince Charles Hospital,Panic Disorder,No,237,30:29,1,43000,5
+24,4,1,2009,Jun,20,Alice Springs Hospital,Panic Disorder,Yes,6,48:31,1,37500,81
+103,17,1,2011,Feb,15,Werribee Mercy Hospital,Breast Cancer,No,342,50:49,1,47000,44
+127,19,1,2010,Mar,16,Royal Perth Hospital,Hysteroscopy,No,35,40:38,1,47000,452
+27,5,1,2009,Sep,10,Royal Darwin Hospital,Endometritis,Yes,199,32:44,1,16000,340
+96,14,1,2011,Sep,27,St Lukes Private Hospital,Panic Disorder,No,271,41:45,1,28000,407
+60,10,1,2009,Dec,5,Flinders Medical Centre,Breast Cancer,No,310,42:49,1,48000,112
+36,5,1,2010,May,17,Alice Springs Hospital,Osteopetrosis,No,204,30:19,1,22500,8
+11,2,1,2009,Sep,16,Gosford Hospital,Hypertension,No,203,22:10,1,10000,423
+46,6,1,2007,Apr,16,Princess Alexandra Hospital,Schizophrenia,No,99,43:51,1,36500,306
+38,3,1,2008,Aug,4,Alice Springs Hospital,Hypoglycemia,No,271,44:30,1,11500,58
+49,7,1,2009,Sep,4,Princess Alexandra Hospital,Ecthyma,No,280,39:23,1,38500,184
+109,17,1,2010,Aug,5,Werribee Mercy Hospital,Adrenal Carcinoma,No,118,27:26,1,1500,182
+90,13,1,2007,Aug,14,Royal Hobart Hospital,Osteopetrosis,No,301,40:34,1,40500,30
+122,18,1,2008,Oct,22,Sir Charles Gairdner Hospital,Vaginitis,No,167,46:48,1,31000,248
+46,7,1,2011,Aug,3,Normanton Hospital,Adrenal Carcinoma,No,56,26:53,1,33500,422
+37,4,1,2008,Feb,3,Alice Springs Hospital,Ecthyma,No,32,21:34,1,7500,329
+112,15,1,2006,May,12,Werribee Mercy Hospital,Empyema Imaging,No,152,35:34,1,44000,10
+60,11,1,2010,Jul,15,The Queen Elizabeth Hospital,Drug Eruptions,No,148,32:30,1,19500,254
+128,20,1,2009,Dec,26,Graylands Hospital,Depression,No,90,43:45,1,15500,5
+99,13,1,2011,Mar,8,Royal Hobart Hospital,Schizophrenia,No,64,33:24,1,22000,353
+88,13,1,2006,Sep,18,Mersey Community Hospital,Endometritis,No,100,23:42,1,500,318
+76,11,1,2010,Jan,11,The Queen Elizabeth Hospital,Cardiac Sarcoma,No,135,39:58,1,26500,420
+103,16,1,2010,May,28,Monash Medical Centre,Vaginitis,Yes,73,47:41,1,10000,181
+52,8,1,2009,Jan,8,Normanton Hospital,Neutrophilia,Yes,306,26:35,1,37500,200
+58,6,1,2011,Nov,12,Princess Alexandra Hospital,Thyroid Lymphoma,No,164,32:23,1,7000,475
+52,7,1,2011,Aug,27,Ipswich Hospital,Insulinoma,No,64,27:21,1,16000,440
+91,13,1,2006,Jun,5,Mersey Community Hospital,Pediatric Tachycardia,No,86,45:51,1,19500,71
+26,4,1,2008,Dec,16,Alice Springs Hospital,Anemia,No,359,28:57,1,4000,139
+54,6,1,2010,Oct,5,The Prince Charles Hospital,Osteopetrosis,No,193,36:52,1,6000,176
+54,8,1,2008,Nov,3,Princess Alexandra Hospital,Neutrophilia,Yes,76,23:27,1,23000,14
+68,10,1,2011,Dec,10,The Queen Elizabeth Hospital,Drug Eruptions,Yes,20,35:51,1,24000,316

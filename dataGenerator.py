@@ -1,90 +1,61 @@
-#http://emedicine.medscape.com/
+import random, sys
+##
+##for i in range(0,3*7):
+##    print (i);
+##
+##sys.exit();
 
-import random
 
-states = [
-    'New South Wales',
-    'Northern Territory',
-    'Queensland',
-    'South Australia',
-    'Tasmania',
-    'Victoria',
-    'Western Australia'
-];
 
-months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec'
-];
+states = ['New South Wales','Northern Territory','Queensland','South Australia','Tasmania','Victoria','Western Australia'];
+months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+years = ["2006","2007","2008","2009","2010","2011"];
+
 hospitals = [
-    #New South Wales
-    [
+    [#New South Wales
         'Manly Hospital',
         'Royal North Shore Hospital',
         'Gosford Hospital',
         'Mater Hospital'
     ],
-    #Northern Territory
-    [
+    [#Northern Territory
         'Alice Springs Hospital',
         'Royal Darwin Hospital',
         'Katherine District Hospital'
     ],
-    #Queensland
-    [
+    [#Queensland
         'Princess Alexandra Hospital',
         'The Prince Charles Hospital',
         'Ipswich Hospital',
         'Normanton Hospital'
     ],
-    #South Australia
-    [
+    [#South Australia
         'Flinders Medical Centre',
         'The Queen Elizabeth Hospital',
         'Quorn Hospital',
         'Port Lincoln Health Services'
     ],
-    #Tasmania
-    [
+    [#Tasmania
         'Royal Hobart Hospital',
         'St Lukes Private Hospital',
         'Mersey Community Hospital'
     ],
-    #Victoria
-    [
+    [#Victoria
         'The Alfred Hospital',
         'Monash Medical Centre',
         'Werribee Mercy Hospital',
         'Geelong Hospital'
     ],
-    #Western Australia
-    [
+    [#Western Australia
         'Royal Perth Hospital',
         'Sir Charles Gairdner Hospital',
         'King Edward Memorial Hospital for Women',
         'Graylands Hospital'
     ]
-];
-i = 0;
-amountDoctors = 0;
-doctors = [];
-while i < len(hospitals):
-    #3 doctors for each hospital
-    doctors.append(len(hospitals[i])*3);
-    amountDoctors = amountDoctors + len(hospitals[i])*3;
-    i = i + 1
+];#26 hospitals
 
 
+#http://emedicine.medscape.com/
 diseases = [
     'Acute encephalitis',
     'Acute infectious hepatitis',
@@ -126,59 +97,86 @@ diseases.append(['Hypoglycemia','Insulinoma','Osteopetrosis']);
 diseases.append(['Neutrophilia','Splenomegaly','Anemia']);
 diseases.append(['Vaginitis','Endometritis','Hysteroscopy']);
 
-years = [
-    2006,
-    2007,
-    2008,
-    2009,
-    2010,
-    2011
-];
 
 output = [];
 line = [];
+
+
+
 i = 0;
-LIM = 50;
-variableNames = [
-    'Patient',
-    'Year',
-    'Month',
-    'State',
-    'Doctor',
-    'Hospital',
-    'Specialty',
-    'Disease'
-];
-while i < LIM:
-    patient = random.randint(1, LIM);
-    posYear = random.randint(0,len(years)-1);
-    month = random.randint(0,11);
+
+
+#Control variables
+
+pricePerDayTreatment = 500;
+numberOfGPPerHospital = 3;
+
+numberOfHospitalsPerRegion = [len(hospitals[j]) for j in range(len(hospitals))];
+
+patientsPerState = 20;
+numberOfPatients = len(states)*patientsPerState;#The number of patients is 100 per State
+numberOfInteractions = 50;#Number of register that will appear on output file
+
+LIMITPharmaceuticalBenefit = 350;
+
+while i < numberOfInteractions:
     posState = random.randint(0,len(states)-1);
-    numDoctor = random.randint(1,doctors[posState]);
+    patientID = random.randint(posState*patientsPerState,((posState+1)*patientsPerState)- 1);
+    gpID = random.randint(posState*numberOfGPPerHospital,((posState+1)*numberOfGPPerHospital)- 1);
+    
+
+    
+    posYear = random.randint(0,len(years)-1);
+    posMonth = random.randint(0,11);
+    day = random.randint(1,28);
+    durationAppointment = str(random.randint(20,50)) + ':' + str(random.randint(10,59));
+    
     posHospital = random.randint(0,len(hospitals[posState])-1);
-    posDisease = random.randint(0,amountDoctors-1);
+    
+    posDisease = random.randint(0,3);
     posSpecialty = random.randint(0,len(specialties)-1);
     posDisease = random.randint(0,len(diseases[posSpecialty])-1);
-    treatmentCost = 1000;
+
+    specialistID = 1;
+    
+    delayDays = random.randint(0,365);
+    durationTreatment = random.randint(1,180);
     daysInHospital = random.randint(0,100);
+    totalTreatmentCost = daysInHospital*pricePerDayTreatment;
+    privateInsurance = random.randint(0,5);
+    totalSpentPharmaceuticalBenefit = random.randint(0,500);
+
+    if(privateInsurance > 4):
+        privateInsurance = "Yes";
+    else:
+        privateInsurance = "No";
+    
     line = [
-            #str(patient),
-            str(years[posYear]),
-            str(months[month]),
-            str(states[posState]),
-            #str(numDoctor),
-            #hospitals[posState][posHospital],
-            #specialties[posSpecialty]
+            #General Data
+            str(patientID),
+            str(gpID),
+            str(specialistID),
+            years[posYear],
+            months[posMonth],
+            str(day),
+            hospitals[posState][posHospital],
             diseases[posSpecialty][posDisease],
-            #str(1000),
-            #str("Units"),
-            str(1)
-            #str(daysInHospital),
-            #str(treatmentCost)
-            #str(33)
+            
+
+            #Measures
+            privateInsurance,
+            str(delayDays),
+            durationAppointment,
+            str(1),#just a counter
+            str(totalTreatmentCost),
+            str(totalSpentPharmaceuticalBenefit)
     ];
     output.append(line);
     i = i + 1;
+
+
+
+    
 
 f = open('output.txt', 'w')
 
