@@ -1,6 +1,6 @@
 import random, sys
-##
-##for i in range(0,3*7):
+
+##for i in range(0,3*7*4):
 ##    print (i);
 ##
 ##sys.exit();
@@ -21,7 +21,8 @@ hospitals = [
     [#Northern Territory
         'Alice Springs Hospital',
         'Royal Darwin Hospital',
-        'Katherine District Hospital'
+        'Katherine District Hospital',
+        'Tennant Creek Hospital'
     ],
     [#Queensland
         'Princess Alexandra Hospital',
@@ -38,7 +39,8 @@ hospitals = [
     [#Tasmania
         'Royal Hobart Hospital',
         'St Lukes Private Hospital',
-        'Mersey Community Hospital'
+        'Mersey Community Hospital',
+        'North West Regional Hospital'
     ],
     [#Victoria
         'The Alfred Hospital',
@@ -109,35 +111,44 @@ i = 0;
 #Control variables
 
 pricePerDayTreatment = 500;
+
 numberOfGPPerHospital = 3;
 
 numberOfHospitalsPerRegion = [len(hospitals[j]) for j in range(len(hospitals))];
 
-patientsPerState = 20;
+patientsPerState = 50;
+
 numberOfPatients = len(states)*patientsPerState;#The number of patients is 100 per State
-numberOfInteractions = 50;#Number of register that will appear on output file
+
+
+
+numberOfInteractions = 5000;#Number of register that will appear on output file
+
 
 LIMITPharmaceuticalBenefit = 350;
+
 
 while i < numberOfInteractions:
     posState = random.randint(0,len(states)-1);
     patientID = random.randint(posState*patientsPerState,((posState+1)*patientsPerState)- 1);
-    gpID = random.randint(posState*numberOfGPPerHospital,((posState+1)*numberOfGPPerHospital)- 1);
     
+    
+    gpID = random.randint(posState*numberOfGPPerHospital,((posState+1)*numberOfGPPerHospital)- 1);
 
+    
     
     posYear = random.randint(0,len(years)-1);
     posMonth = random.randint(0,11);
     day = random.randint(1,28);
-    durationAppointment = str(random.randint(20,50)) + ':' + str(random.randint(10,59));
+    durationAppointment = str(random.randint(20,50));
     
     posHospital = random.randint(0,len(hospitals[posState])-1);
-    
+
     posDisease = random.randint(0,3);
     posSpecialty = random.randint(0,len(specialties)-1);
     posDisease = random.randint(0,len(diseases[posSpecialty])-1);
 
-    specialistID = 1;
+    specialistID = posState*len(hospitals)+posHospital*len(hospitals[posState])+posSpecialty*len(specialties);
     
     delayDays = random.randint(0,365);
     durationTreatment = random.randint(1,180);
@@ -147,9 +158,9 @@ while i < numberOfInteractions:
     totalSpentPharmaceuticalBenefit = random.randint(0,500);
 
     if(privateInsurance > 4):
-        privateInsurance = "Yes";
+        privateInsurance = 1;
     else:
-        privateInsurance = "No";
+        privateInsurance = 0;
     
     line = [
             #General Data
@@ -164,9 +175,9 @@ while i < numberOfInteractions:
             
 
             #Measures
-            privateInsurance,
+            str(privateInsurance),
             str(delayDays),
-            durationAppointment,
+            str(durationAppointment),
             str(1),#just a counter
             str(totalTreatmentCost),
             str(totalSpentPharmaceuticalBenefit)
