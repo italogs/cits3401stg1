@@ -1,12 +1,5 @@
 import random, sys
 
-##for i in range(0,3*7*4):
-##    print (i);
-##
-##sys.exit();
-
-
-
 states = ['New South Wales','Northern Territory','Queensland','South Australia','Tasmania','Victoria','Western Australia'];
 months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 years = ["2006","2007","2008","2009","2010","2011"];
@@ -131,12 +124,9 @@ LIMITPharmaceuticalBenefit = 350;
 while i < numberOfInteractions:
     posState = random.randint(0,len(states)-1);
     patientID = random.randint(posState*patientsPerState,((posState+1)*patientsPerState)- 1);
-    
-    
+
     gpID = random.randint(posState*numberOfGPPerHospital,((posState+1)*numberOfGPPerHospital)- 1);
 
-    
-    
     posYear = random.randint(0,len(years)-1);
     posMonth = random.randint(0,11);
     day = random.randint(1,28);
@@ -172,22 +162,17 @@ while i < numberOfInteractions:
             str(day),
             hospitals[posState][posHospital],
             diseases[posSpecialty][posDisease],
-            
-
+			str(privateInsurance),
+			str(durationAppointment),
+			
             #Measures
-            str(privateInsurance),
             str(delayDays),
-            str(durationAppointment),
-            str(1),#just a counter
+            str(1),#Units
             str(totalTreatmentCost),
             str(totalSpentPharmaceuticalBenefit)
     ];
     output.append(line);
     i = i + 1;
-
-
-
-    
 
 f = open('output.txt', 'w')
 
